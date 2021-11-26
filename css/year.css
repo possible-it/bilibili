@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .layer1,
+.banner .layer2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .layer1 img,
+.banner .layer2 img {
+  width: 100%;
+  height: 100%;
+}
+.banner .layer3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 750px;
+  height: 672px;
+  margin-left: -375px;
+}
+.banner .layer3 img {
+  width: 750px;
+  height: 672px;
+}
+.banner .layer4 {
+  position: absolute;
+  top: 100px;
+  left: -50px;
+}
+.banner .layer5 {
+  position: absolute;
+  top: 100px;
+  right: -50px;
+}
+.banner .layer6 {
+  position: absolute;
+  top: 120px;
+  left: 480px;
+}
+.banner .layer7 {
+  position: absolute;
+  bottom: -180px;
+  left: 10px;
+}
+.banner .layer8 {
+  position: absolute;
+  top: 138px;
+  left: 0;
+}
+.banner .star1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 300px;
+  height: 150px;
+  background-image: url(../images/kv-star.png);
+  background-size: 1500px 1350px;
+  background-position: 0 0;
+  animation: star1 0.9s steps(9);
+}
+.banner .star2 {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  height: 150px;
+  background-image: url(../images/kv-star.png);
+  background-size: 1500px 1350px;
+  animation: star2 1s 1s steps(9);
+}
+.banner .star3 {
+  position: absolute;
+  top: 10px;
+  left: 60%;
+  width: 300px;
+  height: 150px;
+  background-image: url(../images/kv-star.png);
+  background-size: 1500px 1350px;
+  animation: star3 0.5s 0.9s steps(9);
+}
+.banner .star4 {
+  position: absolute;
+  top: 40px;
+  left: 15%;
+  width: 300px;
+  height: 150px;
+  background-image: url(../images/kv-star.png);
+  background-size: 1500px 1350px;
+  animation: star4 0.9s 0.6s steps(9);
+}
+@keyframes star1 {
+  from {
+    background-position: 0 1350px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes star2 {
+  from {
+    background-position: -300px 1350px;
+  }
+  to {
+    background-position: -300px 0;
+  }
+}
+@keyframes star3 {
+  from {
+    background-position: -600px 1350px;
+  }
+  to {
+    background-position: -600px 0;
+  }
+}
+@keyframes star4 {
+  from {
+    background-position: -900px 1350px;
+  }
+  to {
+    background-position: -900px 0;
+  }
+}

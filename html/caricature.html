@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔哩哔哩</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/caricature.css">
+    <link rel="stylesheet" href="../css/video.css">
+    <script src="../js/video.js"></script>
+    <script src="../js/videojs-contrib-hls.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header w1">
+            <div class="logo">
+                <img src="../images/caricature_logo.png" alt="">
+                <h1>哔哩哔哩</h1>
+            </div>
+            <div class="nav-l">
+                <ul>
+                    <li><a href="#">主站</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">分类</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">更新</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="" placeholder="弥留之国的爱丽丝">
+                <button class="iconfont">&#xe643;</button>
+            </div>
+            <div class="nav-r">
+                <ul>
+                    <li><a href="#">下载APP</a></li>
+                    <li><a href="#">历史</a></li>
+                    <li><a href="#">追漫</a></li>
+                </ul>
+            </div>
+            <div class="user"></div>
+        </div>
+    </header>
+    <section class="video_play w1">
+        <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" x-webkit-airplay="allow" poster="" webkit-playsinline playsinline x5-video-player-type="h5" x5-video-player-fullscreen="true" preload="auto">
+            <!-- <source src="https://1251316161.vod2.myqcloud.com/007a649dvodcq1251316161/b9d2cc6f5285890812329062596/Jt8Tz3Zt28kA.mp4"  type="application/x-mpegURL"> -->
+                <source src="https://1251316161.vod2.myqcloud.com/007a649dvodcq1251316161/b9d2cc6f5285890812329062596/Jt8Tz3Zt28kA.mp4" type="video/mp4">
+        </video>
+        <div class="menu">
+            <h2>选集</h2>
+            <ul>
+                <li class="current">1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+        </div>
+    </section>
+    <section class="recomment">
+        <div class="hd">
+            <h2>为你推荐</h2>
+            <a href="#">换一批</a>
+        </div>
+        <div class="bd">
+
+        </div>
+    </section>
+
+</body>
+<script>
+    var player = videojs('myVideo', {
+        bigPlayButton: true,
+        textTrackDisplay: true,
+        postImage: false,
+        errorDisplay: false,
+        controls: true
+    })
+</script>
+
+</html>
